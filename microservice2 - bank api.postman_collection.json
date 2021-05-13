@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "8c97d93f-cd98-49e4-85c0-d5e19ce55a34",
+		"name": "microservice2 - bank api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "microservice2 - read all people from microservice1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8010/people/readall",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"people",
+						"readall"
+					]
+				},
+				"description": "http://localhost:8010/people/readall"
+			},
+			"response": []
+		},
+		{
+			"name": "microservice2 - read people from microservice 1 with name starting ak",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8010/people/readnamesak",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"people",
+						"readnamesak"
+					]
+				},
+				"description": "http://localhost:8010/people/readnamesak"
+			},
+			"response": []
+		},
+		{
+			"name": "microservice2 - read all people from microservice1 who is above average wight and from Israel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8010/people/readaboveavgisrael",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"people",
+						"readaboveavgisrael"
+					]
+				},
+				"description": "http://localhost:8010/people/readaboveavgisrael"
+			},
+			"response": []
+		}
+	]
+}

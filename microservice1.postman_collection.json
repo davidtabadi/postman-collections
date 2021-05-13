@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "0acf9181-136c-44d1-b9ee-aa7fa49b492c",
+		"name": "microservice1",
+		"description": "http://localhost:8011/persons/readallpersons",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "microservice1 - read all persons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8011/persons/readallpersons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8011",
+					"path": [
+						"persons",
+						"readallpersons"
+					]
+				},
+				"description": "microservice1 - create person"
+			},
+			"response": []
+		},
+		{
+			"name": "microservice1 - create person",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Jerry\",\n\t\"age\":39,\n\t\"gender\": \"Male\",\n\t\"height\":1.88,\n\t\"weight\": 89.05,\n\t\"address\" : {\n\t\t\t\"state\": \"USA\",\n\t\t\t\"city\" :\"Bat Yam\",\n\t\t\t\"street\": \"Balfour\",\n\t\t\t\"zipcode\": \"581131\",\n\t\t\t\"containsAnimals\":\"false\"\n\t}\n\t\n\t\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8011/persons/createperson",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8011",
+					"path": [
+						"persons",
+						"createperson"
+					]
+				},
+				"description": "http://localhost:8011/persons/createperson"
+			},
+			"response": []
+		},
+		{
+			"name": "microservice1 - get person",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8011/persons/readperson/60991ff2680487787b23fe9c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8011",
+					"path": [
+						"persons",
+						"readperson",
+						"60991ff2680487787b23fe9c"
+					]
+				},
+				"description": "http://localhost:8011/persons/readperson/60991ff2680487787b23fe9c"
+			},
+			"response": []
+		},
+		{
+			"name": "microservice1 - update person",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"60991ff2680487787b23fe9c\",\n    \"name\": \"David\",\n    \"age\": 40,\n    \"gender\": \"Male\",\n    \"height\": 1.75,\n    \"weight\": 99.8,\n    \"address\": {\n        \"state\": \"Israel\",\n        \"city\": \"Bat Yam\",\n        \"street\": \"Balfour\",\n        \"zipcode\": \"581131\",\n        \"containsAnimals\": false\n    }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8011/persons/updateperson/60991ff2680487787b23fe9c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8011",
+					"path": [
+						"persons",
+						"updateperson",
+						"60991ff2680487787b23fe9c"
+					]
+				},
+				"description": "http://localhost:8011/persons/updateperson/60991ff2680487787b23fe9c"
+			},
+			"response": []
+		},
+		{
+			"name": "microservice1 - delete person",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8011/persons/deleteperson/60992036680487787b23fe9d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8011",
+					"path": [
+						"persons",
+						"deleteperson",
+						"60992036680487787b23fe9d"
+					]
+				},
+				"description": "http://localhost:8011/persons/deleteperson/60992036680487787b23fe9d"
+			},
+			"response": []
+		},
+		{
+			"name": "microservice1 - name starts with A or K",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8011/persons/readallpersonsAK",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8011",
+					"path": [
+						"persons",
+						"readallpersonsAK"
+					]
+				},
+				"description": "http://localhost:8011/persons/readallpersonsAK"
+			},
+			"response": []
+		},
+		{
+			"name": "microservice1 - above avg weight and from Israel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8011/persons/readallpersonsavgisrael",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8011",
+					"path": [
+						"persons",
+						"readallpersonsavgisrael"
+					]
+				},
+				"description": "http://localhost:8011/persons/readallpersonsavgisrael"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
